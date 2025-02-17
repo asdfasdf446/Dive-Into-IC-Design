@@ -47,12 +47,9 @@ nav:
 # - "About the Author": "about_author.md"
 
 # Theme configuration
-# theme:
-#   name: mkdocs  # Theme name
-#   locale: en_US  # Language setting
-#   palette:  # Color scheme
-#     primary: primary  # Primary color
-#     accent: secondary  # Accent color
+theme:
+  name: rtd-dropdown
+  collapse_navigation: true
 
 # Plugin configuration
 # plugins:
