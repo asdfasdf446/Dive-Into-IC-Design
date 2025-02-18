@@ -9,6 +9,8 @@ nav:
   - "Chapter 1: Overview":
     - "What is this book about?": "chapter_1_Overview/what.md"
     - "How to read this book?":   "chapter_1_Overview/how.md"
+  - "Chapter x: Top Verification":
+    - "What work is required for TOP Verification?": "chapter_x_Top_Verification/what.md"
 
 # - "Chapter 2: Digital Circuit Design":
 #   - "Verilog HDL": "chapter2/verilog_hdl.md"
