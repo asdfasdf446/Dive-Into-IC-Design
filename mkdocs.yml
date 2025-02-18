@@ -1,7 +1,6 @@
 site_name: Dive Into IC Design
 site_description: This is a sample documentation site with various features and configurations.
 site_author: Fengfan Liu
-# site_url: https://example.com
 
 # Navigation configuration
 nav:
@@ -12,76 +11,6 @@ nav:
   - "Chapter x: Top Verification":
     - "What work is required for TOP Verification?": "chapter_x_Top_Verification/what.md"
 
-# - "Chapter 2: Digital Circuit Design":
-#   - "Verilog HDL": "chapter2/verilog_hdl.md"
-#   - "Logic Synthesis": "chapter2/logic_synthesis.md"
-#   - "Timing Analysis": "chapter2/timing_analysis.md"
-# - "Chapter 3: Analog Circuit Design":
-#   - "CMOS Analog Circuits": "chapter3/cmos_analog.md"
-#   - "Operational Amplifiers": "chapter3/operational_amplifiers.md"
-#   - "Analog Circuit Simulation": "chapter3/analog_simulation.md"
-# - "Chapter 4: Mixed-Signal Circuit Design":
-#   - "Digital-to-Analog Converters (DACs)": "chapter4/dac.md"
-#   - "Analog-to-Digital Converters (ADCs)": "chapter4/adc.md"
-#   - "Mixed-Signal Simulation": "chapter4/mixed_signal_simulation.md"
-# - "Chapter 5: Physical Design":
-#   - "Place and Route": "chapter5/place_and_route.md"
-#   - "Parasitic Extraction": "chapter5/parasitic_extraction.md"
-#   - "Physical Verification": "chapter5/physical_verification.md"
-# - "Chapter 6: Chip Testing and Packaging":
-#   - "Chip Testing": "chapter6/chip_testing.md"
-#   - "Chip Packaging": "chapter6/chip_packaging.md"
-# - "Chapter 7: SoC Design":
-#   - "SoC Architecture": "chapter7/soc_architecture.md"
-#   - "Network-on-Chip (NoC)": "chapter7/noc.md"
-#   - "SoC Verification": "chapter7/soc_verification.md"
-# - "Chapter 8: FPGA Design":
-#   - "FPGA Basics": "chapter8/fpga_basics.md"
-#   - "FPGA Design Flow": "chapter8/fpga_design_flow.md"
-#   - "FPGA Applications": "chapter8/fpga_applications.md"
-# - "Chapter 9: Advanced Processes and Future Trends":
-#   - "FinFET Technology": "chapter9/finfet.md"
-#   - "3D Integration": "chapter9/3d_integration.md"
-#   - "Quantum Computing": "chapter9/quantum_computing.md"
-# - "Appendix":
-#   - "Glossary": "appendix/glossary.md"
-#   - "References": "appendix/references.md"
-# - "About the Author": "about_author.md"
-
 # Theme configuration
 theme:
-  name: rtd-dropdown
-  collapse_navigation: true
-
-# Plugin configuration
-# plugins:
-#   - search  # Search plugin
-#   - awesome-pages # Enhanced page management
-#   - prioritize  # Page sorting
-#   - tags:  # Tag plugin
-#       tags_file: tags.md
-
-# Build configuration
-# docs_dir: docs  # Documentation directory
-# site_dir: site  # Output directory
-# use_directory_urls: true  # Use directory URLs
-
-# Additional configuration
-# repo_url: https://github.com/your-username/your-repo  # Code repository address
-# edit_uri: edit/main/docs/  # Edit link
-# google_analytics:  # Google Analytics
-#   property: UA-XXXXXXXXX-X
-
-# Markdown extensions
-#markdown_extensions:
-#  - admonition
-#  - codehilite:
-#      guess_lang: false
-#      linenums: false
-#  - meta
-#  - toc:
-#      permalink: "#"
-
-# Hooks
-# hooks:
-#   - scripts/hook.py
+  name: readthedocs
