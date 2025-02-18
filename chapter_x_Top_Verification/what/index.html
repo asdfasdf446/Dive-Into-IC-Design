@@ -1,274 +1,174 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Fengfan Liu">
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>What work is required for TOP Verification? - Dive Into IC Design</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "What work is required for TOP Verification?";
-    var mkdocs_page_input_path = "chapter_x_Top_Verification/what.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Fengfan Liu" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>What work is required for TOP Verification? - Dive Into IC Design</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "What work is required for TOP Verification?";
+        var mkdocs_page_input_path = "chapter_x_Top_Verification/what.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Dive Into IC Design</a>
-        <div role="search">
+          <a href="../.." class="icon icon-home"> Dive Into IC Design
+        </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="tocbase current">
-    
-    
-      
-
-
-  <li class="navtree toctree-l1 inactive">
-    <a class="" href="../..">Home</a>
-  </li>
-    
-      
-  <li class="navtree toctree-l1 label">
-    <p class="caption">Chapter 1: Overview</p>
-  </li>
-
-
-  
-
-  
-    <li class="navtree toctree-l1 group">
-      <ul class="navtree subnav-l1 current">
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../chapter_1_Overview/what/">What is this book about?</a>
-  </li>
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../chapter_1_Overview/how/">How to read this book?</a>
-  </li>
-        
-      </ul>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chapter 1: Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../chapter_1_Overview/what/">What is this book about?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../chapter_1_Overview/how/">How to read this book?</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chapter x: Top Verification</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">What work is required for TOP Verification?</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-testbench-tb-integration">1. Testbench (TB) Integration:</a>
     </li>
-    
-      
-  <li class="navtree toctree-l1 label">
-    <p class="caption">Chapter x: Top Verification</p>
-  </li>
-
-
-  
-
-  
-    <li class="navtree toctree-l1 group">
-      <ul class="navtree subnav-l1 current">
-          
-
-
-  
-    
-    <li class="navtree toctree-l2 page current">
-      <a class="current" href="./">
-        What work is required for TOP Verification?
-          <span class="toctree-expand"></span>
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#2-system-knowledge-debugging">2. System Knowledge (Debugging):</a>
     </li>
-    
-      
-
-  <li class="toctree-l2 current with-children">
-    <a href="#top-verification-overview">
-      TOP Verification Overview
-      <span class="toctree-expand"></span>
-    </a>
-  </li>
-
-
-
-  <li class="toctree-l2 current">
-    <ul class="subnav-l2 current">
-    
-      
-        <li class="toctree-l3">
-          <a class="toctree-l4" href="#1-testbench-tb-integration">1. Testbench (TB) Integration:</a>
-        </li>
-    
-      
-        <li class="toctree-l3">
-          <a class="toctree-l4" href="#2-system-knowledge-debugging">2. System Knowledge (Debugging):</a>
-        </li>
-    
-      
-        <li class="toctree-l3">
-          <a class="toctree-l4" href="#3-non-asic-related-aspects">3. Non-ASIC Related Aspects:</a>
-        </li>
-    
-      
-        <li class="toctree-l3">
-          <a class="toctree-l4" href="#4-other-aspects">4. Other Aspects:</a>
-        </li>
-    
+    <li class="toctree-l2"><a class="reference internal" href="#3-non-asic-related-aspects">3. Non-ASIC Related Aspects:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-other-aspects">4. Other Aspects:</a>
+    </li>
     </ul>
-  </li>
-
-
-  
-        
-      </ul>
-    </li>
-    
-  </ul>
+                  </li>
+              </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Dive Into IC Design</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Dive Into IC Design</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Chapter x: Top Verification &raquo;</li>
-        
-      
-    
-    <li>What work is required for TOP Verification?</li>
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Chapter x: Top Verification</li>
+      <li class="breadcrumb-item active">What work is required for TOP Verification?</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
   <hr/>
 </div>
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h2 id="top-verification-overview">TOP Verification Overview</h2>
 <p>TOP verification is one of the most highly integrated and complex parts of the overall verification process. We can break it down into several dimensions. Here's a general overview of the tasks involved:</p>
 <h3 id="1-testbench-tb-integration">1. Testbench (TB) Integration:</h3>
-<p><strong>Integration of Module Agents:</strong> Integrate all previously developed module-level TB agents into the TOP-level TB.
-<strong>Bus Configuration:</strong> Reconfigure the stimulus for the System-on-Chip (SoC)'s external communication buses.  Agents for these buses should be set to "active" mode, meaning they include components like sequences and drivers to manage stimulus generation.
-<strong>Active Agent Configuration (Typically):</strong>
+<p><strong>Integration of Module Agents:</strong> Integrate all previously developed module-level TB agents into the TOP-level TB.</p>
+<p><strong>Bus Configuration:</strong> Reconfigure the stimulus for the System-on-Chip (SoC)'s external communication buses.  Agents for these buses should be set to "active" mode, meaning they include components like sequences and drivers to manage stimulus generation.</p>
+<p><strong>Active Agent Configuration (Typically):</strong>
 * High-speed interfaces: PCIe, DDR, Ethernet, Flash, etc.
-* Serial interfaces: UART, SPI, JTAG, I2C, etc.
-<strong>Passive Agent Configuration (Typically):</strong>
+* Serial interfaces: UART, SPI, JTAG, I2C, etc.</p>
+<p><strong>Passive Agent Configuration (Typically):</strong>
 * Internal communication interfaces.
 * Custom-designed interfaces (implementation depends on the architecture).
 * Common internal interfaces: AXI, AHB, GMII, etc. Agents for these are typically set to "passive" mode, meaning they only need to monitor signals to ensure protocol compliance.</p>
 <h3 id="2-system-knowledge-debugging">2. System Knowledge (Debugging):</h3>
 <p>At the TOP level, many system-level aspects become apparent. A basic understanding of these is crucial for quickly identifying issues and assigning them to the appropriate owner. The level of involvement can vary:</p>
 <ul>
-<li><strong>Strong Individual:</strong>  A highly capable verification engineer can perform initial debugging, pinpoint the problem to a system or even a specific module, and then hand it off.</li>
-<li><strong>Strong Team:</strong>  A strong team might have individuals responsible for specific test cases. The assigned owner handles any issues that arise within that case, regardless of the cause.</li>
+<li>
+<p><strong>Strong Individual:</strong>  A highly capable verification engineer can perform initial debugging, pinpoint the problem to a system or even a specific module, and then hand it off.</p>
+</li>
+<li>
+<p><strong>Strong Team:</strong>  A strong team might have individuals responsible for specific test cases. The assigned owner handles any issues that arise within that case, regardless of the cause.</p>
+</li>
 </ul>
 <p>Regardless, the following fundamental knowledge is necessary:</p>
-<p><strong>2.1 Data Flow:</strong> Understand the basic data paths. For example, in a network card, understand the flow of data for transmission (TX) and reception (RX), which modules the data passes through, and how each module processes the data.
-<strong>2.2 Registers:</strong>
+<p><strong>2.1 Data Flow:</strong> Understand the basic data paths. For example, in a network card, understand the flow of data for transmission (TX) and reception (RX), which modules the data passes through, and how each module processes the data.</p>
+<p><strong>2.2 Registers:</strong>
 * Know the different methods for configuring chip registers (PCIe, firmware, JTAG, etc.).
 * Understand the overall configuration modes of the chip (e.g., setting PCIe Gen1/2/3, setting network card speed to Gigabit/10 Gigabit).  Which registers need to be configured?
-* Crucially, understand the necessary register configurations during chip power-up and the boot process.
-<strong>2.3 Interrupts:</strong> Verify the overall chip interrupt system. This includes (but is not limited to):
+* Crucially, understand the necessary register configurations during chip power-up and the boot process.</p>
+<p><strong>2.3 Interrupts:</strong> Verify the overall chip interrupt system. This includes (but is not limited to):
 * Interrupts triggered by accumulated error counts.
-* Interrupts triggered by uncorrectable ECC errors.
-<strong>2.4 Performance:</strong>
+* Interrupts triggered by uncorrectable ECC errors.</p>
+<p><strong>2.4 Performance:</strong>
 * Identify all performance metrics (bandwidth, packet throughput, latency, cache hit rate, etc.).
-* Verify that the performance of each data flow meets the specifications.
-<strong>2.5 Clock &amp; Reset:</strong>
+* Verify that the performance of each data flow meets the specifications.</p>
+<p><strong>2.5 Clock &amp; Reset:</strong>
 * Verify the correctness of the clock tree and reset tree.
 * Confirm that each clock domain can be correctly configured and reset.
-* Ensure that all clocks are operating within configurable frequency ranges.
-<strong>2.6 Power:</strong>
+* Ensure that all clocks are operating within configurable frequency ranges.</p>
+<p><strong>2.6 Power:</strong>
 * Verify that all voltage domains are configured correctly.
 * Ensure that each domain can be powered up independently.
-* Confirm that each domain operates within the configurable voltage range.
-<strong>2.7 TODO:</strong> Other points to be added.</p>
+* Confirm that each domain operates within the configurable voltage range.</p>
+<p><strong>2.7 TODO:</strong> Other points to be added.</p>
 <h3 id="3-non-asic-related-aspects"><strong>3. Non-ASIC Related Aspects:</strong></h3>
 <p><strong>3.1 FPGA Verification:</strong>
 * Create an image for loading onto the FPGA.  This image also requires preliminary simulation, though not as rigorously as the ASIC.
-* Basic FPGA knowledge is required.
-<strong>3.2 Gate-Level Simulation (GLS):</strong>
+* Basic FPGA knowledge is required.</p>
+<p><strong>3.2 Gate-Level Simulation (GLS):</strong>
 * Verification of the synthesized gate-level netlist (both pre- and post-layout).
-* In larger companies, this might be the responsibility of the backend team, but in smaller companies, it often falls under TOP verification.  This is a large topic in itself.
-<strong>3.3 Acceleration/Emulation:</strong>
+* In larger companies, this might be the responsibility of the backend team, but in smaller companies, it often falls under TOP verification.  This is a large topic in itself.</p>
+<p><strong>3.3 Acceleration/Emulation:</strong>
 * Based on the verification progress, adjust module configurations. For example, focus on in-house designed modules initially, and later integrate PHY IPs and VIPs.
-* For GLS, consider "stubbing out" (replacing with dummy modules) modules unrelated to the current test case to speed up simulation.
-<strong>3.4 Automatic Test Equipment (ATE):</strong>
+* For GLS, consider "stubbing out" (replacing with dummy modules) modules unrelated to the current test case to speed up simulation.</p>
+<p><strong>3.4 Automatic Test Equipment (ATE):</strong>
 * Prepare ATE test patterns in advance for mass production quality checks.
 * A key part of ATE is verifying PHY functionality.  It's best to prepare these patterns within the license period of the PHY to ensure technical support.
-* In larger companies, this might be handled by a dedicated DFT (Design for Testability) role. In smaller companies, the TOP verification engineer often handles it.
-<strong>3.5 TODO:</strong> Other points to be added.</p>
+* In larger companies, this might be handled by a dedicated DFT (Design for Testability) role. In smaller companies, the TOP verification engineer often handles it.</p>
+<p><strong>3.5 TODO:</strong> Other points to be added.</p>
 <h3 id="4-other-aspects"><strong>4. Other Aspects:</strong></h3>
 <p><strong>4.1 Signoff Checklist/SOP Optimization:</strong>
 * Collect and categorize issues encountered during each product generation.  This is unavoidable but provides valuable experience for future iterations.
 * Incorporate these issues into the Standard Operating Procedures (SOPs) and sign-off checklists.  This continuously improves design and verification quality.
-* This accumulated knowledge is one of the company's most valuable long-term assets.
-<strong>4.2 TODO:</strong> Other points to be added.</p>
+* This accumulated knowledge is one of the company's most valuable long-term assets.</p>
+<p><strong>4.2 TODO:</strong> Other points to be added.</p>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="../../chapter_1_Overview/how/" class="btn btn-neutral" title="How to read this book?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../chapter_1_Overview/how/" class="btn btn-neutral float-left" title="How to read this book?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -276,18 +176,25 @@
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../../chapter_1_Overview/how/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-    </span>
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../chapter_1_Overview/how/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
 
 </body>
 </html>
