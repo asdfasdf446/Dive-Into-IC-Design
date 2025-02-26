@@ -8,13 +8,13 @@ nav:
   # Chapter 1
   - "Chapter 1: Overview":
     - "What is this book about?": "chapter_1_Overview/what.md"
-    - "How to read this book?":   "chapter_1_Overview/how.md"
+    - "How to read this book?": "chapter_1_Overview/how.md"
   # Chapter x
   - "Chapter x: Module Verification":
-    - "What work is required for Module Verification?": "chapetr_x_Module_Verification/what.md"
-    - "Test Plan Template":                             "chapetr_x_Module_Verification/test_plan_template.md"
-    - "Write test plan":                                "chapetr_x_Module_Verification/write_test_plan.md"
-    - "Review test plan":                               "chapetr_x_Module_Verification/review_test_plan.md"
+    - "What work is required for Module Verification?": "chapter_x_Module_Verification/what.md"
+    - "Test Plan Template": "chapter_x_Module_Verification/test_plan_template.md"
+    - "Write test plan": "chapter_x_Module_Verification/write_test_plan.md"
+    - "Review test plan": "chapter_x_Module_Verification/review_test_plan.md"
   # Chapter x
   - "Chapter x: Top Verification":
     - "What work is required for TOP Verification?": "chapter_x_Top_Verification/what.md"
