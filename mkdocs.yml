@@ -15,9 +15,9 @@ nav:
     - "Test Plan Template": "chapter_x_Module_Verification/test_plan_template.md"
     - "Write test plan": "chapter_x_Module_Verification/write_test_plan.md"
     - "Review test plan": "chapter_x_Module_Verification/review_test_plan.md"
-    - "Test Bench Template": "chapter_x_Module_Verification/test_plan_template/test_bench_template.md"
-      - "Agent": "chapter_x_Module_Verification/test_plan_template/agent.md"
-      - "Env": "chapter_x_Module_Verification/test_plan_template/env.md"
+    - "Test Bench Template": "chapter_x_Module_Verification/test_bench_template/test_bench_template.md"
+      - "Agent": "chapter_x_Module_Verification/test_bench_template/agent.md"
+      - "Env": "chapter_x_Module_Verification/test_bench_template/env.md"
   # Chapter x
   - "Chapter x: Top Verification":
     - "What work is required for TOP Verification?": "chapter_x_Top_Verification/what.md"
