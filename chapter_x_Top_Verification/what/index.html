@@ -223,39 +223,48 @@
 <h3 id="31-testbench-tb-integration">3.1 Testbench (TB) Integration</h3>
 <p><strong>Module Agent Integration</strong>: Incorporate all module-level agents into the TOP-level environment.</p>
 <p><strong>Bus Configurations</strong>:</p>
-<pre><code>- **Active Agents**: PCIe, DDR, Ethernet, Flash, UART, SPI, etc.
-- **Passive Agents**: AXI, AHB, GMII, internal custom interfaces.
-</code></pre>
+<ul>
+<li><strong>Active Agents</strong>: PCIe, DDR, Ethernet, Flash, UART, SPI, etc.</li>
+<li><strong>Passive Agents</strong>: AXI, AHB, GMII, internal custom interfaces.</li>
+</ul>
 <h3 id="32-system-knowledge-for-debugging">3.2 System Knowledge (for Debugging)</h3>
 <p><strong>Data Flow</strong>: Understand TX/RX paths and module data transformations.</p>
 <p><strong>Registers</strong>:</p>
-<pre><code>- Knowledge of configuration interfaces (PCIe, JTAG, FW, etc.).
-- Awareness of chip mode settings and boot-time initialization.
-</code></pre>
+<ul>
+<li>Knowledge of configuration interfaces (PCIe, JTAG, FW, etc.).</li>
+<li>Awareness of chip mode settings and boot-time initialization.</li>
+</ul>
 <p><strong>Interrupts</strong>:</p>
-<pre><code>- Must verify system-wide interrupt responses (e.g., ECC, counter thresholds).
-</code></pre>
+<ul>
+<li>Must verify system-wide interrupt responses (e.g., ECC, counter thresholds).</li>
+</ul>
 <p><strong>Performance</strong>:</p>
-<pre><code>- Validate metrics like bandwidth, latency, cache hit rates.
-</code></pre>
+<ul>
+<li>Validate metrics like bandwidth, latency, cache hit rates.</li>
+</ul>
 <p><strong>Clock &amp; Reset</strong>:</p>
-<pre><code>- Confirm correct configuration and reset of all clock domains.
-</code></pre>
+<ul>
+<li>Confirm correct configuration and reset of all clock domains.</li>
+</ul>
 <p><strong>Power Domains</strong>:</p>
-<pre><code>- Verify independent domain power-up and correct voltage ranges.
-</code></pre>
+<ul>
+<li>Verify independent domain power-up and correct voltage ranges.</li>
+</ul>
 <h3 id="33-non-asic-specific-tasks">3.3 Non-ASIC Specific Tasks</h3>
 <p><strong>FPGA Verification</strong>: Build and simulate FPGA images for early validation.</p>
 <p><strong>Gate-Level Simulation (GLS)</strong>:</p>
-<pre><code>- Pre- and post-layout verification of synthesized netlists.
-</code></pre>
+<ul>
+<li>Pre- and post-layout verification of synthesized netlists.</li>
+</ul>
 <p><strong>Acceleration/Emulation</strong>:</p>
-<pre><code>- Adjust module use based on maturity.
-- Use stubs to replace unrelated modules during slow simulations.
-</code></pre>
+<ul>
+<li>Adjust module use based on maturity.</li>
+<li>Use stubs to replace unrelated modules during slow simulations.</li>
+</ul>
 <p><strong>Automatic Test Equipment (ATE)</strong>:</p>
-<pre><code>- Generate production test patterns, especially for PHYs.
-</code></pre>
+<ul>
+<li>Generate production test patterns, especially for PHYs.</li>
+</ul>
 <hr />
 <h2 id="4-continuous-improvement">4. Continuous Improvement</h2>
 <h3 id="41-sop-signoff-checklist-optimization">4.1 SOP &amp; Signoff Checklist Optimization</h3>
