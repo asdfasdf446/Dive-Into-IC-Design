@@ -9,35 +9,35 @@ TOP-level (TOP) verification is one of the most integrated and complex component
 ### 1.1 Reporting and Execution: Emphasizing Upward and Downward Synchronization
 
 - **Upward Management**:
-  - Decompose work into modules, define progress milestones, and assign responsible owners.
-  - Use a Portal for visibility and expectation alignment with leadership.
-  - Ensure reports are concise and highlight conclusions and objectives clearly.
+    - Decompose work into modules, define progress milestones, and assign responsible owners.
+    - Use a Portal for visibility and expectation alignment with leadership.
+    - Ensure reports are concise and highlight conclusions and objectives clearly.
 
 - **Downward Management**:
-  - Synchronize regularly to avoid unexpected escalations.
-  - Require updates every Thursday before end of day with clear deadlines to avoid ambiguity.
+    - Synchronize regularly to avoid unexpected escalations.
+    - Require updates every Thursday before end of day with clear deadlines to avoid ambiguity.
 
 ### 1.2 Clear Positioning: Validation Objectives and Role Division
 
 - **Validation Objective**:
-  - Focus on system-level scenarios that module-level verification cannot cover.
-  - Emphasize validating end-to-end flows and subsystem integration, ignoring low-level module internals.
+    - Focus on system-level scenarios that module-level verification cannot cover.
+    - Emphasize validating end-to-end flows and subsystem integration, ignoring low-level module internals.
 
 - **Role Division**:
-  - **TOP Leader**: Responsible for defining methodology and overall orchestration.
-  - **Team Members**: Execute based on capability. Strategy-making should be limited to a core few; others execute tasks or debug.
+    - **TOP Leader**: Responsible for defining methodology and overall orchestration.
+    - **Team Members**: Execute based on capability. Strategy-making should be limited to a core few; others execute tasks or debug.
 
 ### 1.3 Simplification and Standardization
 
 - **Avoid Inefficiencies**:
-  1. **Sudden Ideas**: Avoid ad hoc instructions without follow-up.
-  2. **Over-regulation**: Avoid making others fill complex templates or strict formats.
-  3. **Frequent Policy Shifts**: Prevent inconsistent directions that confuse execution.
+    1. **Sudden Ideas**: Avoid ad hoc instructions without follow-up.
+    2. **Over-regulation**: Avoid making others fill complex templates or strict formats.
+    3. **Frequent Policy Shifts**: Prevent inconsistent directions that confuse execution.
 
 - **Reverse Practice (What to Do)**:
-  1. **Jira-Centric Flow**: Turn all plans into Jira—either Bug or Case tickets. Let Jira reflect reality.
-  2. **Self-Maintained Tools**: All forms/portals are maintained by TOP leads; team members only focus on assigned Jira.
-  3. **Steady Process**: Stick to a weekly, repeatable flow so even less experienced team members can keep up.
+    1. **Jira-Centric Flow**: Turn all plans into Jira—either Bug or Case tickets. Let Jira reflect reality.
+    2. **Self-Maintained Tools**: All forms/portals are maintained by TOP leads; team members only focus on assigned Jira.
+    3. **Steady Process**: Stick to a weekly, repeatable flow so even less experienced team members can keep up.
 
 ---
 
@@ -83,34 +83,34 @@ TOP verification also involves deep technical knowledge across multiple system d
 
 - **Module Agent Integration**: Incorporate all module-level agents into the TOP-level environment.
 - **Bus Configurations**:
-  - **Active Agents**: PCIe, DDR, Ethernet, Flash, UART, SPI, etc.
-  - **Passive Agents**: AXI, AHB, GMII, internal custom interfaces.
+    - **Active Agents**: PCIe, DDR, Ethernet, Flash, UART, SPI, etc.
+    - **Passive Agents**: AXI, AHB, GMII, internal custom interfaces.
 
 ### 3.2 System Knowledge (for Debugging)
 
 - **Data Flow**: Understand TX/RX paths and module data transformations.
 - **Registers**:
-  - Knowledge of configuration interfaces (PCIe, JTAG, FW, etc.).
-  - Awareness of chip mode settings and boot-time initialization.
+    - Knowledge of configuration interfaces (PCIe, JTAG, FW, etc.).
+    - Awareness of chip mode settings and boot-time initialization.
 - **Interrupts**:
-  - Must verify system-wide interrupt responses (e.g., ECC, counter thresholds).
+    - Must verify system-wide interrupt responses (e.g., ECC, counter thresholds).
 - **Performance**:
-  - Validate metrics like bandwidth, latency, cache hit rates.
+    - Validate metrics like bandwidth, latency, cache hit rates.
 - **Clock & Reset**:
-  - Confirm correct configuration and reset of all clock domains.
+    - Confirm correct configuration and reset of all clock domains.
 - **Power Domains**:
-  - Verify independent domain power-up and correct voltage ranges.
+    - Verify independent domain power-up and correct voltage ranges.
 
 ### 3.3 Non-ASIC Specific Tasks
 
 - **FPGA Verification**: Build and simulate FPGA images for early validation.
 - **Gate-Level Simulation (GLS)**:
-  - Pre- and post-layout verification of synthesized netlists.
+    - Pre- and post-layout verification of synthesized netlists.
 - **Acceleration/Emulation**:
-  - Adjust module use based on maturity.
-  - Use stubs to replace unrelated modules during slow simulations.
+    - Adjust module use based on maturity.
+    - Use stubs to replace unrelated modules during slow simulations.
 - **Automatic Test Equipment (ATE)**:
-  - Generate production test patterns, especially for PHYs.
+    - Generate production test patterns, especially for PHYs.
 
 ---
 
