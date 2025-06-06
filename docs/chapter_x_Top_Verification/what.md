@@ -92,8 +92,8 @@ TOP verification also involves deep technical knowledge across multiple system d
 
 **Bus Configurations**:
 
-    - **Active Agents**: PCIe, DDR, Ethernet, Flash, UART, SPI, etc.
-    - **Passive Agents**: AXI, AHB, GMII, internal custom interfaces.
+  - **Active Agents**: PCIe, DDR, Ethernet, Flash, UART, SPI, etc.
+  - **Passive Agents**: AXI, AHB, GMII, internal custom interfaces.
 
 ### 3.2 System Knowledge (for Debugging)
 
@@ -101,24 +101,24 @@ TOP verification also involves deep technical knowledge across multiple system d
 
 **Registers**:
 
-    - Knowledge of configuration interfaces (PCIe, JTAG, FW, etc.).
-    - Awareness of chip mode settings and boot-time initialization.
+  - Knowledge of configuration interfaces (PCIe, JTAG, FW, etc.).
+  - Awareness of chip mode settings and boot-time initialization.
 
 **Interrupts**:
 
-    - Must verify system-wide interrupt responses (e.g., ECC, counter thresholds).
+  - Must verify system-wide interrupt responses (e.g., ECC, counter thresholds).
 
 **Performance**:
 
-    - Validate metrics like bandwidth, latency, cache hit rates.
+  - Validate metrics like bandwidth, latency, cache hit rates.
 
 **Clock & Reset**:
 
-    - Confirm correct configuration and reset of all clock domains.
+  - Confirm correct configuration and reset of all clock domains.
 
 **Power Domains**:
 
-    - Verify independent domain power-up and correct voltage ranges.
+  - Verify independent domain power-up and correct voltage ranges.
 
 ### 3.3 Non-ASIC Specific Tasks
 
@@ -126,16 +126,16 @@ TOP verification also involves deep technical knowledge across multiple system d
 
 **Gate-Level Simulation (GLS)**:
 
-    - Pre- and post-layout verification of synthesized netlists.
+  - Pre- and post-layout verification of synthesized netlists.
 
 **Acceleration/Emulation**:
 
-    - Adjust module use based on maturity.
-    - Use stubs to replace unrelated modules during slow simulations.
+  - Adjust module use based on maturity.
+  - Use stubs to replace unrelated modules during slow simulations.
 
 **Automatic Test Equipment (ATE)**:
 
-    - Generate production test patterns, especially for PHYs.
+  - Generate production test patterns, especially for PHYs.
 
 ---
 
