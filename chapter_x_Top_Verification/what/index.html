@@ -149,59 +149,29 @@
 <hr />
 <h2 id="1-core-principles">1. Core Principles</h2>
 <h3 id="11-reporting-and-execution-emphasizing-upward-and-downward-synchronization">1.1 Reporting and Execution: Emphasizing Upward and Downward Synchronization</h3>
-<ul>
-<li>
-<p><strong>Upward Management</strong>:</p>
-<ul>
-<li>Decompose work into modules, define progress milestones, and assign responsible owners.</li>
-<li>Use a Portal for visibility and expectation alignment with leadership.</li>
-<li>Ensure reports are concise and highlight conclusions and objectives clearly.</li>
-</ul>
-</li>
-<li>
-<p><strong>Downward Management</strong>:</p>
-<ul>
-<li>Synchronize regularly to avoid unexpected escalations.</li>
-<li>Require updates every Thursday before end of day with clear deadlines to avoid ambiguity.</li>
-</ul>
-</li>
-</ul>
+<p><strong>Upward Management</strong>:
+    - Decompose work into modules, define progress milestones, and assign responsible owners.
+    - Use a Portal for visibility and expectation alignment with leadership.
+    - Ensure reports are concise and highlight conclusions and objectives clearly.</p>
+<p><strong>Downward Management</strong>:
+    - Synchronize regularly to avoid unexpected escalations.
+    - Require updates every Thursday before end of day with clear deadlines to avoid ambiguity.</p>
 <h3 id="12-clear-positioning-validation-objectives-and-role-division">1.2 Clear Positioning: Validation Objectives and Role Division</h3>
-<ul>
-<li>
-<p><strong>Validation Objective</strong>:</p>
-<ul>
-<li>Focus on system-level scenarios that module-level verification cannot cover.</li>
-<li>Emphasize validating end-to-end flows and subsystem integration, ignoring low-level module internals.</li>
-</ul>
-</li>
-<li>
-<p><strong>Role Division</strong>:</p>
-<ul>
-<li><strong>TOP Leader</strong>: Responsible for defining methodology and overall orchestration.</li>
-<li><strong>Team Members</strong>: Execute based on capability. Strategy-making should be limited to a core few; others execute tasks or debug.</li>
-</ul>
-</li>
-</ul>
+<p><strong>Validation Objective</strong>:
+    - Focus on system-level scenarios that module-level verification cannot cover.
+    - Emphasize validating end-to-end flows and subsystem integration, ignoring low-level module internals.</p>
+<p><strong>Role Division</strong>:
+    - <strong>TOP Leader</strong>: Responsible for defining methodology and overall orchestration.
+    - <strong>Team Members</strong>: Execute based on capability. Strategy-making should be limited to a core few; others execute tasks or debug.</p>
 <h3 id="13-simplification-and-standardization">1.3 Simplification and Standardization</h3>
-<ul>
-<li>
-<p><strong>Avoid Inefficiencies</strong>:</p>
-<ol>
-<li><strong>Sudden Ideas</strong>: Avoid ad hoc instructions without follow-up.</li>
-<li><strong>Over-regulation</strong>: Avoid making others fill complex templates or strict formats.</li>
-<li><strong>Frequent Policy Shifts</strong>: Prevent inconsistent directions that confuse execution.</li>
-</ol>
-</li>
-<li>
-<p><strong>Reverse Practice (What to Do)</strong>:</p>
-<ol>
-<li><strong>Jira-Centric Flow</strong>: Turn all plans into Jira—either Bug or Case tickets. Let Jira reflect reality.</li>
-<li><strong>Self-Maintained Tools</strong>: All forms/portals are maintained by TOP leads; team members only focus on assigned Jira.</li>
-<li><strong>Steady Process</strong>: Stick to a weekly, repeatable flow so even less experienced team members can keep up.</li>
-</ol>
-</li>
-</ul>
+<p><strong>Avoid Inefficiencies</strong>:
+    1. <strong>Sudden Ideas</strong>: Avoid ad hoc instructions without follow-up.
+    2. <strong>Over-regulation</strong>: Avoid making others fill complex templates or strict formats.
+    3. <strong>Frequent Policy Shifts</strong>: Prevent inconsistent directions that confuse execution.</p>
+<p><strong>Reverse Practice (What to Do)</strong>:
+    1. <strong>Jira-Centric Flow</strong>: Turn all plans into Jira—either Bug or Case tickets. Let Jira reflect reality.
+    2. <strong>Self-Maintained Tools</strong>: All forms/portals are maintained by TOP leads; team members only focus on assigned Jira.
+    3. <strong>Steady Process</strong>: Stick to a weekly, repeatable flow so even less experienced team members can keep up.</p>
 <hr />
 <h2 id="2-work-phases">2. Work Phases</h2>
 <p>TOP verification follows a five-phase process that enables structured progress and consistent output.</p>
@@ -235,56 +205,32 @@
 <h2 id="3-technical-scope-of-top-verification">3. Technical Scope of TOP Verification</h2>
 <p>TOP verification also involves deep technical knowledge across multiple system dimensions.</p>
 <h3 id="31-testbench-tb-integration">3.1 Testbench (TB) Integration</h3>
-<ul>
-<li><strong>Module Agent Integration</strong>: Incorporate all module-level agents into the TOP-level environment.</li>
-<li><strong>Bus Configurations</strong>:<ul>
-<li><strong>Active Agents</strong>: PCIe, DDR, Ethernet, Flash, UART, SPI, etc.</li>
-<li><strong>Passive Agents</strong>: AXI, AHB, GMII, internal custom interfaces.</li>
-</ul>
-</li>
-</ul>
+<p><strong>Module Agent Integration</strong>: Incorporate all module-level agents into the TOP-level environment.
+<strong>Bus Configurations</strong>:
+    - <strong>Active Agents</strong>: PCIe, DDR, Ethernet, Flash, UART, SPI, etc.
+    - <strong>Passive Agents</strong>: AXI, AHB, GMII, internal custom interfaces.</p>
 <h3 id="32-system-knowledge-for-debugging">3.2 System Knowledge (for Debugging)</h3>
-<ul>
-<li><strong>Data Flow</strong>: Understand TX/RX paths and module data transformations.</li>
-<li><strong>Registers</strong>:<ul>
-<li>Knowledge of configuration interfaces (PCIe, JTAG, FW, etc.).</li>
-<li>Awareness of chip mode settings and boot-time initialization.</li>
-</ul>
-</li>
-<li><strong>Interrupts</strong>:<ul>
-<li>Must verify system-wide interrupt responses (e.g., ECC, counter thresholds).</li>
-</ul>
-</li>
-<li><strong>Performance</strong>:<ul>
-<li>Validate metrics like bandwidth, latency, cache hit rates.</li>
-</ul>
-</li>
-<li><strong>Clock &amp; Reset</strong>:<ul>
-<li>Confirm correct configuration and reset of all clock domains.</li>
-</ul>
-</li>
-<li><strong>Power Domains</strong>:<ul>
-<li>Verify independent domain power-up and correct voltage ranges.</li>
-</ul>
-</li>
-</ul>
+<p><strong>Data Flow</strong>: Understand TX/RX paths and module data transformations.
+<strong>Registers</strong>:
+    - Knowledge of configuration interfaces (PCIe, JTAG, FW, etc.).
+    - Awareness of chip mode settings and boot-time initialization.
+<strong>Interrupts</strong>:
+    - Must verify system-wide interrupt responses (e.g., ECC, counter thresholds).
+<strong>Performance</strong>:
+    - Validate metrics like bandwidth, latency, cache hit rates.
+<strong>Clock &amp; Reset</strong>:
+    - Confirm correct configuration and reset of all clock domains.
+<strong>Power Domains</strong>:
+    - Verify independent domain power-up and correct voltage ranges.</p>
 <h3 id="33-non-asic-specific-tasks">3.3 Non-ASIC Specific Tasks</h3>
-<ul>
-<li><strong>FPGA Verification</strong>: Build and simulate FPGA images for early validation.</li>
-<li><strong>Gate-Level Simulation (GLS)</strong>:<ul>
-<li>Pre- and post-layout verification of synthesized netlists.</li>
-</ul>
-</li>
-<li><strong>Acceleration/Emulation</strong>:<ul>
-<li>Adjust module use based on maturity.</li>
-<li>Use stubs to replace unrelated modules during slow simulations.</li>
-</ul>
-</li>
-<li><strong>Automatic Test Equipment (ATE)</strong>:<ul>
-<li>Generate production test patterns, especially for PHYs.</li>
-</ul>
-</li>
-</ul>
+<p><strong>FPGA Verification</strong>: Build and simulate FPGA images for early validation.
+<strong>Gate-Level Simulation (GLS)</strong>:
+    - Pre- and post-layout verification of synthesized netlists.
+<strong>Acceleration/Emulation</strong>:
+    - Adjust module use based on maturity.
+    - Use stubs to replace unrelated modules during slow simulations.
+<strong>Automatic Test Equipment (ATE)</strong>:
+    - Generate production test patterns, especially for PHYs.</p>
 <hr />
 <h2 id="4-continuous-improvement">4. Continuous Improvement</h2>
 <h3 id="41-sop-signoff-checklist-optimization">4.1 SOP &amp; Signoff Checklist Optimization</h3>
