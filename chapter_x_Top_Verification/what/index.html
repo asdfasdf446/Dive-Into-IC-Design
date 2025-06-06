@@ -150,43 +150,40 @@
 <h2 id="1-core-principles">1. Core Principles</h2>
 <h3 id="11-reporting-and-execution-emphasizing-upward-and-downward-synchronization">1.1 Reporting and Execution: Emphasizing Upward and Downward Synchronization</h3>
 <p><strong>Upward Management</strong>:</p>
-<pre><code>- Decompose work into modules, define progress milestones, and assign responsible owners.
-
-- Use a Portal for visibility and expectation alignment with leadership.
-
-- Ensure reports are concise and highlight conclusions and objectives clearly.
-</code></pre>
+<ul>
+<li>Decompose work into modules, define progress milestones, and assign responsible owners.</li>
+<li>Use a Portal for visibility and expectation alignment with leadership.</li>
+<li>Ensure reports are concise and highlight conclusions and objectives clearly.</li>
+</ul>
 <p><strong>Downward Management</strong>:</p>
-<pre><code>- Synchronize regularly to avoid unexpected escalations.
-
-- Require updates every Thursday before end of day with clear deadlines to avoid ambiguity.
-</code></pre>
+<ul>
+<li>Synchronize regularly to avoid unexpected escalations.</li>
+<li>Require updates every Thursday before end of day with clear deadlines to avoid ambiguity.</li>
+</ul>
 <h3 id="12-clear-positioning-validation-objectives-and-role-division">1.2 Clear Positioning: Validation Objectives and Role Division</h3>
 <p><strong>Validation Objective</strong>:</p>
-<pre><code>- Focus on system-level scenarios that module-level verification cannot cover.
-
-- Emphasize validating end-to-end flows and subsystem integration, ignoring low-level module internals.
-</code></pre>
+<ul>
+<li>Focus on system-level scenarios that module-level verification cannot cover.</li>
+<li>Emphasize validating end-to-end flows and subsystem integration, ignoring low-level module internals.</li>
+</ul>
 <p><strong>Role Division</strong>:</p>
-<pre><code>- **TOP Leader**: Responsible for defining methodology and overall orchestration.
-
-- **Team Members**: Execute based on capability. Strategy-making should be limited to a core few; others execute tasks or debug.
-</code></pre>
+<ul>
+<li><strong>TOP Leader</strong>: Responsible for defining methodology and overall orchestration.</li>
+<li><strong>Team Members</strong>: Execute based on capability. Strategy-making should be limited to a core few; others execute tasks or debug.</li>
+</ul>
 <h3 id="13-simplification-and-standardization">1.3 Simplification and Standardization</h3>
 <p><strong>Avoid Inefficiencies</strong>:</p>
-<pre><code>1. **Sudden Ideas**: Avoid ad hoc instructions without follow-up.
-
-2. **Over-regulation**: Avoid making others fill complex templates or strict formats.
-
-3. **Frequent Policy Shifts**: Prevent inconsistent directions that confuse execution.
-</code></pre>
+<ol>
+<li><strong>Sudden Ideas</strong>: Avoid ad hoc instructions without follow-up.</li>
+<li><strong>Over-regulation</strong>: Avoid making others fill complex templates or strict formats.</li>
+<li><strong>Frequent Policy Shifts</strong>: Prevent inconsistent directions that confuse execution.</li>
+</ol>
 <p><strong>Reverse Practice (What to Do)</strong>:</p>
-<pre><code>1. **Jira-Centric Flow**: Turn all plans into Jira—either Bug or Case tickets. Let Jira reflect reality.
-
-2. **Self-Maintained Tools**: All forms/portals are maintained by TOP leads; team members only focus on assigned Jira.
-
-3. **Steady Process**: Stick to a weekly, repeatable flow so even less experienced team members can keep up.
-</code></pre>
+<ol>
+<li><strong>Jira-Centric Flow</strong>: Turn all plans into Jira—either Bug or Case tickets. Let Jira reflect reality.</li>
+<li><strong>Self-Maintained Tools</strong>: All forms/portals are maintained by TOP leads; team members only focus on assigned Jira.</li>
+<li><strong>Steady Process</strong>: Stick to a weekly, repeatable flow so even less experienced team members can keep up.</li>
+</ol>
 <hr />
 <h2 id="2-work-phases">2. Work Phases</h2>
 <p>TOP verification follows a five-phase process that enables structured progress and consistent output.</p>
@@ -211,24 +208,14 @@
 </ul>
 <h3 id="phase-4-task-decomposition-and-function-coverage">Phase 4: Task Decomposition and Function Coverage</h3>
 <ul>
-<li>
-<p>Introduce a <strong>Task Portal</strong> for case generation ownership.</p>
-</li>
-<li>
-<p>Owners are responsible for new case creation for their assigned flows/subsystems.</p>
-</li>
-<li>
-<p>Collect function coverage reports to validate completeness.</p>
-</li>
+<li>Introduce a <strong>Task Portal</strong> for case generation ownership.</li>
+<li>Owners are responsible for new case creation for their assigned flows/subsystems.</li>
+<li>Collect function coverage reports to validate completeness.</li>
 </ul>
 <h3 id="phase-5-final-cleanup-and-multi-dimensional-regression">Phase 5: Final Cleanup and Multi-Dimensional Regression</h3>
 <ul>
-<li>
-<p>Execute different regression suites in parallel.</p>
-</li>
-<li>
-<p>Finalize by closing all Jira and reporting complete validation coverage.</p>
-</li>
+<li>Execute different regression suites in parallel.</li>
+<li>Finalize by closing all Jira and reporting complete validation coverage.</li>
 </ul>
 <hr />
 <h2 id="3-technical-scope-of-top-verification">3. Technical Scope of TOP Verification</h2>
@@ -237,14 +224,12 @@
 <p><strong>Module Agent Integration</strong>: Incorporate all module-level agents into the TOP-level environment.</p>
 <p><strong>Bus Configurations</strong>:</p>
 <pre><code>- **Active Agents**: PCIe, DDR, Ethernet, Flash, UART, SPI, etc.
-
 - **Passive Agents**: AXI, AHB, GMII, internal custom interfaces.
 </code></pre>
 <h3 id="32-system-knowledge-for-debugging">3.2 System Knowledge (for Debugging)</h3>
 <p><strong>Data Flow</strong>: Understand TX/RX paths and module data transformations.</p>
 <p><strong>Registers</strong>:</p>
 <pre><code>- Knowledge of configuration interfaces (PCIe, JTAG, FW, etc.).
-
 - Awareness of chip mode settings and boot-time initialization.
 </code></pre>
 <p><strong>Interrupts</strong>:</p>
@@ -266,7 +251,6 @@
 </code></pre>
 <p><strong>Acceleration/Emulation</strong>:</p>
 <pre><code>- Adjust module use based on maturity.
-
 - Use stubs to replace unrelated modules during slow simulations.
 </code></pre>
 <p><strong>Automatic Test Equipment (ATE)</strong>:</p>
@@ -276,29 +260,17 @@
 <h2 id="4-continuous-improvement">4. Continuous Improvement</h2>
 <h3 id="41-sop-signoff-checklist-optimization">4.1 SOP &amp; Signoff Checklist Optimization</h3>
 <ul>
-<li>
-<p>Collect pain points from each generation and evolve them into SOPs.</p>
-</li>
-<li>
-<p>Update checklists accordingly.</p>
-</li>
-<li>
-<p>Accumulated knowledge improves both verification quality and organizational maturity.</p>
-</li>
+<li>Collect pain points from each generation and evolve them into SOPs.</li>
+<li>Update checklists accordingly.</li>
+<li>Accumulated knowledge improves both verification quality and organizational maturity.</li>
 </ul>
 <hr />
 <h2 id="5-conclusion">5. Conclusion</h2>
 <p>The essence of successful TOP verification lies in:</p>
 <ul>
-<li>
-<p>✅ <strong>Goal-Oriented Execution</strong></p>
-</li>
-<li>
-<p>✅ <strong>Process Clarity and Simplification</strong></p>
-</li>
-<li>
-<p>✅ <strong>Technical Breadth and Team Collaboration</strong></p>
-</li>
+<li>✅ <strong>Goal-Oriented Execution</strong></li>
+<li>✅ <strong>Process Clarity and Simplification</strong></li>
+<li>✅ <strong>Technical Breadth and Team Collaboration</strong></li>
 </ul>
 <p>By combining sound methodology with a detailed understanding of SoC-level complexity, TOP verification can become a scalable, repeatable, and highly reliable part of your product development lifecycle.</p>
               
